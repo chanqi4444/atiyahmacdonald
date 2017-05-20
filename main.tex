@@ -1,0 +1,23 @@
+\documentclass[ebook,12pt,oneside,openany]{memoir}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\usepackage{url}
+
+% for placeholder text
+\usepackage{lipsum}
+
+\title{Solutions to \emph{Introduction to Commutative Algebra} by Atiyah and Macdonald}
+\author{Aditya Gudibanda}
+
+\begin{document}
+\maketitle
+
+\chapter{}
+
+\section{}
+Let $x$ be a nilpotent element of a ring $A$. Show that $1 + x$ is a unit of  $A$. Deduce that the sum of a nilpotent element and a unit is a unit.
+
+Note the identity $\left(\sum_{i = 0}^k x_i \right) (1-x) =  1- x^{k+1}$. Since $x$ is nilpotent,  $x^l = 0$ for some $l \geq 1$. Thus, if we set $k = l-1$ in the identity above, we see that $1-x$ has a multiplicative inverse, and is therefore  a unit. 
+
+
+\end{document}
