@@ -251,6 +251,8 @@ For any $A$-module, let $M[x]$ denote the set of all polynomials in $x$ with coe
 Defining the product of an element of $A[x]$ and an element of $M[x]$ in the obvious way, show that $M[x] \cong A[x] \otimes_{A} M$.
 
 \subsection{Solution}
+From Proposition 2.14, we know that $(M + N) \otimes P \cong (M \otimes P) + (N \otimes P)$. We can consider $M[x]$ to be an infinite direct sum of $M$, and $A[x]$ to be an infinite direct sum of $A$. From Proposition 2.14, we know that when $M$ is a module of $A$, $A \otimes M \cong M$. These two facts immediately imply the desired conclusion, $M[x] \cong A[x] \otimes_A M$.
+
 
 \section{}
 \subsection{Problem}
@@ -272,6 +274,11 @@ ii) If $B$ is a flat $A$-algebra and $N$ is a flat $B$-module, then $N$ is flat 
 
 \subsection{Solution}
 
+i) Let $0 \rightarrow B \rightarrow C \rightarrow D \rightarrow 0$ be an exact sequence of $A$-modules. Since $M$ is flat, \[0 \rightarrow B \otimes_A M \rightarrow C \otimes_A M \rightarrow D \otimes_A M \rightarrow 0\] is exact. Since $N$ is flat, 
+\[0 \rightarrow (B \otimes_A M) \otimes_A N \rightarrow (C \otimes_A M) \otimes_A N \rightarrow (D \otimes_A M) \otimes_A N \rightarrow 0\] is also exact. By Proposition 2.14, $(M \otimes N) \otimes P \cong M \otimes (N \otimes P)$, so therefore we have 
+\[0 \rightarrow B \otimes_A (M \otimes_A N) \rightarrow C \otimes_A (M \otimes_A N) \rightarrow D \otimes_A (M \otimes_A N) \rightarrow 0\] is exact. Thus, $M \otimes_A N$ is flat, as desired.
+
+ii)
 
 \section{}
 \subsection{Problem}
@@ -293,11 +300,19 @@ Let $A$ be a ring, $\mathfrak{a}$ an ideal contained in the Jacobson radical of 
 Let $A$ be a ring $\neq 0$. Show that $A^m \cong A^n \Rightarrow m = n$.
 
 \subsection{Solution}
+Let $\mathfrak{m}$ be a maximal ideal of $A$, let $k = A/\mathfrak{m}$, and let $\phi: A^m \rightarrow A^n$ be an isomorphism. Then $1 \otimes_k \phi: k \otimes_k A^m \rightarrow k \otimes_k A^n$ is an isomorphism of vector spaces of dimensions $m$ and $n$. Thus, $m = n$.
 
 \section{}
 Let $M$ be a finitely generated $A$-module and $\phi: M \rightarrow A^n$ a surjective homomorphism. Show that Ker $(\phi)$ is finitely generated.
 
 \section{Solution}
+Ker $(\phi) \subset M$ and $M$ is finitely generated, so Ker $(\phi)$ must be finitely generated.
+
+\section{}
+\subsection{Problem}
+Let $f: A \rightarrow B$ be a ring homomorphism, and let $N$ be a $B$-module. Regarding $N$ as an $A$-module by restriction of scalars, form the $B$-module $N_B = B \otimes_A N$. Show that the homomorphism $g: N \rightarrow N_B$ which maps $y$ to $1 \otimes y$ is injective and that $g(N)$ is a direct summand of $N_B$.
+
+\subsection{Solution}
 
 
 
