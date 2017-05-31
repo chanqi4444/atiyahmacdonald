@@ -278,8 +278,12 @@ i) Let $0 \rightarrow B \rightarrow C \rightarrow D \rightarrow 0$ be an exact s
 \[0 \rightarrow (B \otimes_A M) \otimes_A N \rightarrow (C \otimes_A M) \otimes_A N \rightarrow (D \otimes_A M) \otimes_A N \rightarrow 0\] is also exact. By Proposition 2.14, $(M \otimes N) \otimes P \cong M \otimes (N \otimes P)$, so therefore we have 
 \[0 \rightarrow B \otimes_A (M \otimes_A N) \rightarrow C \otimes_A (M \otimes_A N) \rightarrow D \otimes_A (M \otimes_A N) \rightarrow 0\] is exact. Thus, $M \otimes_A N$ is flat, as desired.
 
-ii)
+ii) Let $0 \rightarrow C \rightarrow D \rightarrow E \rightarrow 0$ be an exact sequence of $A$-modules. Since $B$ is a flat $A$-algebra, \[0 \rightarrow C \otimes_A B \rightarrow D \otimes_A B \rightarrow E \otimes_A B \rightarrow 0\] is exact. Since $N$ is a flat $B$-module, \[0 \rightarrow C \otimes_A B \otimes_B N \rightarrow D \otimes_A B \otimes_B N \rightarrow E \otimes_A B \otimes_B N \rightarrow 0\] 
 
+But $B \otimes_B N \cong N$, so we get 
+ \[0 \rightarrow C \otimes_A  N \rightarrow D \otimes_A N \rightarrow E \otimes_A  N \rightarrow 0\] 
+
+which implies that $N$ is flat as an $A$-module, as desired.
 \section{}
 \subsection{Problem}
 Let $0 \rightarrow M' \rightarrow M \rightarrow M'' \rightarrow 0$ be an exact sequence of $A$-modules. If $M'$ and $M''$ are finitely generated, then so is $M$.
@@ -314,6 +318,25 @@ Let $f: A \rightarrow B$ be a ring homomorphism, and let $N$ be a $B$-module. Re
 
 \subsection{Solution}
 
+
+\chapter{}
+
+\section{}
+\subsection{Problem}
+Let $S$ be a multiplicatively closed subset of a ring $A$, and let $M$ be a finitely generated $A$-module. Prove that $S^{-1}M = 0$ if and only if there exists $s \in S$ such that $sM = 0$.
+
+\subsection{Solution}
+$\Leftarrow$: Let $m/t \in S^{-1}M$. Now note that $m/t  = 0/1 \Leftrightarrow mu = 0$ for some $u \in S$. But since $sM = 0$, $ms = 0$ for all $m \in M$, so setting $u = s$ establishes that $m/t = 0$, so $S^{-1}M = 0$.
+
+$\Rightarrow$: Suppose that $S^{-1}M = 0$. Then for all $m/1 \in S^{-1}M$, we have $m/1 = 0/1$, so there exists a $u \in S$ such that $mu = 0$. Let $e_1, e_2, \cdots, e_n$ be the generators of $M$. Let their corresponding annihilators in $S$ be $u_1, u_2, \cdots, u_n$. Then $u_1 u_2 \cdots u_n$ annihilates every element of $M$. Thus, we are done.
+
+\section{}
+\subsection{Problem}
+Let $\mathfrak{a}$ be an ideal of a ring $A$, and let $S = 1 + \mathfrak{a}$. Show that $S^{-1}\mathfrak{a}$ is contained in the Jacobson radical of $S^{-1}A$. 
+
+Use this result and Nakayama's lemma to give a proof of (2.5) which does not depend on determinants.
+
+\subsection{Solution}
 
 
 
