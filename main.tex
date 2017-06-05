@@ -629,7 +629,9 @@ Let $f$ be the map from $M$ to $M''$ in the exact sequence. For each $m \in M$, 
 Let $A$ be a ring, $\mathfrak{a}$ an ideal contained in the Jacobson radical of $A$; let $M$ be an $A$-module and $N$ a finitely generated $A$-module, and let $u: M \rightarrow N$ be a homomorphism. If the induced homomorphism $M/\mathfrak{a}M \rightarrow N/\mathfrak{a}N$ is surjective, then $u$ is surjective.
 
 \subsection{Solution}
-TODO
+The induce homomorphism is surjective, so $u(x)+\mathfrak aN$ passes through
+all values of $N/\mathfrak aN$.
+$\Im(u)+\mathfrak aN=N$ so $\Im(u)=N$ by Nakayama's lemma.
 \section{}
 \subsection{Problem}
 Let $A$ be a ring $\neq 0$. Show that $A^m \cong A^n \Rightarrow m = n$.
@@ -649,7 +651,17 @@ Ker $(\phi) \subset M$ and $M$ is finitely generated, so Ker $(\phi)$ must be fi
 Let $f: A \rightarrow B$ be a ring homomorphism, and let $N$ be a $B$-module. Regarding $N$ as an $A$-module by restriction of scalars, form the $B$-module $N_B = B \otimes_A N$. Show that the homomorphism $g: N \rightarrow N_B$ which maps $y$ to $1 \otimes y$ is injective and that $g(N)$ is a direct summand of $N_B$.
 
 \subsection{Solution}
-TODO
+Let $p:N_B\to N$ be $p(b\otimes y)=by$ which is induced uniquely by the
+universal property of the tensor product, as $\tilde{p}(b,y)=by$ is
+bilinear.
+
+$r(a,n)=p(f(a)\otimes n)$ is bilinear in $A$ and $N$.
+If $r(a,n)=0$ then $a\otimes n=0$.
+$r(1,n)=n$, so $1\otimes n$ is bijective,
+
+Considering $g\circ p$, we have $\ker(g\circ p)\oplus \Im(g\circ p)=N_B$.
+$p$ is surjective so $\Im(g\circ p)=\Im(g)$.
+By the injectivity of $g$, $\ker(g\circ p)=\ker(p)$.
 
 \chapter{}
 
@@ -682,7 +694,11 @@ Let $f: (ST)^{-1}A \rightarrow U^{-1}(S^{-1}A)$ be defined by $f(a/st) = (a/s)/(
 Let $f: A \rightarrow B$ be a homomorphism of rings and let $S$ be a multiplicatively closed subset of $A$. Let $T = f(S)$. Show that $S^{-1}B$ and $T^{-1}B$ are isomorphic as $S^{-1}A$-modules.
 
 \subsection{Solution}
-TODO
+Let $g_1:B\to S^{-1}B$ and $g_2:B\to T^{-1}B$ be the canonical maps.
+$g_2$ induces a unique map $h_2\circ g_1=g_2$.
+$g_1$ induces a unique map $h_1\circ g_2=g_1$.
+$h_1\circ h_2$ is unique by the previous exercise, and is the identity.
+Similarly, $h_2\circ h_1$ is the identity.
 \section{}
 \subsection{Problem}
 Let $A$ be a ring. Suppose that, for each prime ideal $\mathfrak{p}$, the local ring $A_{\mathfrak{p}}$ has no nilpotent element $\neq 0$. Show that $A$ has no nilpotent element $\neq 0$. If each $A_{\mathfrak{p}}$ is an integral domain, is $A$ necessarily an integral domain?
