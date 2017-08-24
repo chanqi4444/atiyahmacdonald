@@ -3,7 +3,6 @@
 \usepackage[english]{babel}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{enumerate}
 \usepackage{url}
 
 % for placeholder text
@@ -49,15 +48,12 @@ Generalize the results of Exercise 2 to a polynomial ring $A[x_1, \ldots, x_r]$ 
 
 \subsection{Solution}
 TODO
-
 \section{}
 \subsection{Problem}
 In the ring $A[x]$, the Jacobson radical is equal to the nilradical.
 
 \subsection{Solution}
-One inclusion holds for any ring.
-Suppose $1-fg$ is always a unit for all $g$.
-Letting $g=x$, all coefficients of $f$ must be nilpotent by exercise $2$.
+TODO
 
 \section{}
 \subsection{Problem}
@@ -80,11 +76,7 @@ TODO
 \subsection{Problem}
 A ring $A$ is such that every ideal not contained in the nilradical contains a nonzero idempotent (that is, an element $e$ such that $e^2 = e \neq 0$). Prove that the nilradical and Jacobson radical of $A$ are equal.
 \subsection{Solution}
-The Jacobson radical is contained in the nilradical in any ring.
-
-Suppose $\mathfrak R$ contains a nonzero idempotent $x$.
-Then $1-xx=1-x$ is a unit.
-But $x(1-x)=0$ so $1-x$ is also a zero divisor.
+TODO
 
 
 \section{}
@@ -98,11 +90,7 @@ Let $\mathfrak{a}$ be a prime ideal. Then $A/\mathfrak{a}$ is an integral domain
 \subsection{Problem}
 Let $A$ be a ring $\neq 0$. Show that the set of prime ideals of $A$ has minimal elements with respect to inclusion.
 \subsection{Solution}
-For any prime $\mathfrak p$, $A/\mathfrak p$ is an integral domain.
-For any $x\in A$, let $\bar{x}=x+\mathfrak p$.
-$\bar{x}(\bar{x}^{n-1}-1)=\bar{x}^n-\bar{x}=0$.
-For $x\notin\mathfrak p$, $\bar{x}^{n-1}=1$, so $\bar{x}$ is a unit.
-As $A/\mathfrak p$ is a field, $\mathfrak p$ is maximal.
+TODO
 
 
 \section{}
@@ -180,9 +168,7 @@ TODO
 In a ring $A$, let $\Sigma$ be the set of all ideals in which every element is a zero-divisor. Show that the set $\Sigma$ has maximal elements and that every maximal element of $\Sigma$ is a prime ideal. Hence the set of zero-divisors of $A$ is a union of prime ideals.
 \subsection{Solution}
 
-If $(x)+\mathfrak m$ contains a non-zero-divisor $z_1$ and
-$(y)+\mathfrak m$ contains a non-zer-divisor $z_2$ then
-$z_1 z_2$ is not a zero divisor and is in $(xy)+\mathfrak m$.
+TODO
 
 \section{}
 \subsection{Problem}
@@ -217,320 +203,30 @@ TODO
 
 \section{}
 \subsection{Problem}
-For each $f\in A$, let $X_f$ denote the complement of $V(f)$ in
-$X=\text{Spec}(A)$.
-The sets $X_f$ are open.
-Show that they form a basis of open sets for the Zariski topology,
-and that
-\begin{enumerate}[i)]
-\item $X_f \cap X_g = X_{fg}$
-\item $X_f=\varnothing \iff f$ is nilpotent
-\item $X_f=X \iff f$ is a unit
-\item $X_f=X_g\iff r((f))=r((g))$
-\item $X$ is quasi-compact.
-\item each $X_f$ is quasi-compact.
-\item An open subset of $X$ is quasi-compact if and only if it is the
-finite union of sets $X_f$.
-\end{enumerate}
+TODO
 \subsection{Solution}
-The complement of $V(E)$ is $\bigcup_{f\in E} X_f$ by De Morgan's laws.
-$X_f \cap X_g = V((f)) \cup V((g)) = V((fg))$.
+TODO
 
-The nilpotent elements are precisely those contained in every prime ideal.
-
-The units are precisely those that generate $(1)$ and $V(1)=\varnothing$.
-
-If $X_f=X_g$ then $V(r((f)))=V(r((g)))$.
-Any prime ideal containing $r((f))$ contains $r((g))$ and vice versa
-so the intersection of these is $r((f))=r((g))$.
-
-Without loss of generality, $X$ is covered by $X_{f}$ for $f\in S$.
-$V(S)=\varnothing$ so $S$ is not contained in any maximal ideal and
-must generate $(1)$.
-So $1=\sum_{i\in J} g_i f_i$ for some finite subset $J$. and so
-$(f_i)_{i\in J}=(1)$ and $X_{f_i}$ cover $X$.
-
-The intersection of prime ideals containing $S$ is the radical $r(S)$.
-$V(S)=V((f))$ so $(f)\subseteq \mathfrak p$ for all $S\subseteq \mathfrak p$
-which implies $(f)\subseteq r(S)$.
-So $f^n=\sum_{i\in J} g_i f_i$ for a finite subset $J$ and some $n>0$.
-So $\{X_{f_i}:i\in J\}$ covers $X_f$.
-
-If an open subset of $X$ is not a finite union of $X_f$ then any
-cover using $X_f$ must be the infinite union of $X_f$.
-If it is a finite union of $X_f$ then since each $X_f$ is individually
-compact we must have that every open cover has a finite subcover
-for each $X_f$ in the union, which is a finite subcover of the open
-subset.
 
 \section{}
 \subsection{Problem}
-Show that
-\begin{enumerate}[i)]
-\item The set $\{x\}$ is closed.
-\item $\overline{\{x\}}=V(\mathfrak p_x)$
-\item $y\in \overline{\{x\}}\iff \mathfrak p_x \subseteq \mathfrak p_y$
-\item $X$ is a $T_0$-space.
-\end{enumerate}
+TODO
 \subsection{Solution}
-If $\mathfrak p_x$ is maximal then there is an open set containing just
-$\{x\}$.
-If there is an open set containing just $\{x\}$ then $x$ is not a subset
-of any other prime ideal and is therefore maximal.
-
-The smallest closed set containing $\{x\}$ consists of the prime ideals
-containing $x$.
-
-$y$ contains $x$ if and only if $y$ is in the set of all prime ideals
-satisfying this property.
-
-Every distinct pair of points satisfy $x \not \subseteq y$ without loss of
-generality.
-In this case $y \not\in \overline{\{x\}}$.
+TODO
 
 
 \section{}
 \subsection{Problem}
 A topological space $X$ is said to be irreducible if $X \neq \emptyset$ and if every pair of non-empty open sets in $X$ intersect, or equivalently if every non-empty open set is dense in $X$. Show that Spec $A$ is irreducible if and only if the nilradical of $A$ is a prime ideal.
 \subsection{Solution}
-If the nilradical is prime then every open set contains the nilradical,
-as it is a point in our space.
-
-For $fg\in \mathfrak N$ with $f,g\notin \mathfrak N$, $X_{fg}=\varnothing$
-but $X_f$ and $X_g$ are nonempty.
+TODO
 
 
 \section{}
 \subsection{Problem}
-Let $X$ be a topological space.
-\begin{enumerate}[i)]
-\item If $Y$ is an irreducible subspace of $X$ then the closure
-$\overline{Y}$ in $X$ is irreducible.
-\item Every irreducible subspace of $X$ is contained in a maximal
-irreducible subspace.
-\item The maximal irreducible subspaces are closed and cover $X$.
-What are the irreducible components of a Hausdorff space?
-\item If $A$ is a ring and $X=\text{Spec}(A)$, then the
-irreducible components of $X$ are the closed sets $V(\mathfrak p)$,
-where $\mathfrak p$ is a minimal prime ideal of $A$.
-\end{enumerate}
+TODO
 \subsection{Solution}
-For $A,B$ in the closure of $Y$, $A\cap Y$ and $B \cap Y$ are open.
-The nonempty case would have nonempty intersection, so without
-loss of generality $A\cap Y$ is empty.
-Then $\overline{Y}\setminus Y$ has nonempty interior, which is impossible.
-
-The union of a chain of irreducible subspaces is irreducible.
-To see this, every point in the union of a chain is contained in some
-element of that chain.
-Let $X_i$ be such that $A$ is nonempty and open and
-$X_j$ be such that $B$ is nonempty and open.
-Without loss of generality, $X_i \subseteq X_j$, so $A$ and $B$ are nonempty
-and open in $X_j$ and have nonempty intersection there, and therefore
-nonempty intersection in the union.
-By Zorn's lemma, there is a maximal irreducible subspace.
-
-Every singleton is an irreducible subspace.
-Every point's singleton is contained in some maximal irreducible subspace,
-which proves covering.
-Moreover, the maximal irreducible subspaces must be equal to their closure
-and therefore are closed.
-
-The irreducible components of a Hausdorff space are singletons, as every
-two distinct points have disjoint open sets containing them.
-This irreducibility in fact is equivalent to the Hausdorff condition.
-
-Every two open sets in $V(\mathfrak p)$ must both contain the point
-$\mathfrak p$.
-Every nonzero ideal contains a minimal prime ideal, so these closed
-irreducible subspaces are covering.
-If $V(\mathfrak p) \cup V(\mathfrak p')$ is irreducible then
-$V(\mathfrak{pp'})$ is irreducible, but for distinct minimal prime
-ideals, this product is $0$.
-
-\section{}
-\subsection{Problem}
-Let $\phi:A\to B$ be a ring homomorphism.
-Let $X=\text{Spec}(A)$ and $Y=\text{Spec}(B)$.
-If $\mathfrak q\in Y$ then $\phi^{-1}(\mathfrak q)$ is a prime ideal of $A$.
-Consider the induced mapping $\phi^* : Y \to X$.
-\begin{enumerate}[i)]
-\item If $f\in A$ then $\phi^{*-1}(X_f)=Y_{\phi(f)}$.
-\item If $\mathfrak a$ is an ideal of $A$ then
-$\phi^{*-1}(V(\mathfrak a))=V(\mathfrak a^e)$.
-\item If $\mathfrak b$ is an ideal of $B$ then
-$\overline{\phi^*(V_b)}=V(b^c)$.
-\item If $\phi$ is surjective, then $\phi^*$ is a homeomorphism of $Y$
-onto the closed subset $V(\ker(\phi))$ of $X$.
-\item $\phi^*(Y)$ is dense in $X \iff \ker(\phi)\subseteq \mathfrak N$.
-\item Let $\psi:B\to C$ be another ring homomorphism.
-$(\psi\circ\phi)^*=\phi^*\circ\psi^*$.
-\item Let $A$ be an integral domain with just one non-zero prime ideal
-$\mathfrak p$, and let $K$ be the field of fractions in $A$.
-Let $B=(A/\mathfrak p)\times K$.
-Define $\phi : A \to B$ by $\phi(x)=(\bar{x},x)$,
-where $\bar{x}$ is the image of $x$ in $A/\mathfrak p$.
-Show that $\phi^*$ is bijective but not a homeomorphism.
-\end{enumerate}
-\subsection{Solution}
-$f\in \phi^{-1}(\mathfrak q) \iff \phi(f)\in \mathfrak q$.
-So $\phi^{-1}(\mathfrak q)\in V(f)\iff \mathfrak q\in V(\phi(f))$.
-
-$\phi^{*-1}(V(\mathfrak a)) = \bigcap_{f\in \mathfrak a} \phi^{*-1}(V(f))
-= \bigcap_{f\in \mathfrak a} V(\phi(f))$
-So this maps to $V(\mathfrak a^e)$, since it is the smallest prime set
-containing $\phi(f)$ for $f\in\mathfrak a$.
-
-A prime ideal contains $r(\mathfrak b)^c$ iff it contains
-the contraction of every prime ideal containing $\mathfrak b$,
-which is the image of $V(\mathfrak b)$ under $\phi^*$.
-The result follows by $V(\bigcap A)=\bar{A}$.
-
-In the map $\mathfrak b\mapsto b^c$ and
-inverse map $\mathfrak a \mapsto \mathfrak a^e$,
-Continuity of both maps follows by the second and third parts.
-The set of contracted ideals is the set of prime ideals
-containing $\ker(\phi)$.
-So the composition of the maps is the identity.
-
-$\ker(\phi)\subseteq\mathfrak N\iff V(\ker(\phi))=X$ which implies
-$\phi^*$ is a homeomorphism.
-Density implies that no prime ideal is contained in
-$X\setminus V(\ker(\phi))$.
-
-\begin{align*}
-  (\psi\circ\phi)^*(\mathfrak q)&=(\psi\circ\phi)^{-1}(\mathfrak q)\\
-  &=\phi^{-1}(\psi^{-1}(\mathfrak q))\\
-  &=(\phi^*\circ\psi^*)(\mathfrak q)
-\end{align*}
-
-There are two prime ideals in $B$ which are $(1)\times(0)$ and
-$(0)\times(1)$ since $(0)\times(0)$ is the product of these two prime
-ideals and $(1)\times(1)$ is the entire space.
-$\phi^*((0)\times(1))$ is the prime ideal $\mathfrak p$.
-$\phi^*((1)\times(0))$ is the prime ideal $0$.
-Since there are only two elements each, $\phi^*$ is a bijection.
-$\phi^*(V((1)\times(0)))$ contains just $0$ and not $\mathfrak p$, which
-is not closed.
-So $\phi^*$ is not an open mapping.
-\section{}
-\subsection{Problem}
-Let $A$ be the direct product of rings $A_i$.
-Show that Spec$(A)$ is the disjoint union of open subspaces $X_i$
-where $X_i$ is canonically homeomorphic with Spec$(A_i)$.
-
-Conversely, let $A$ be any ring.
-Show that the following are equivalent:
-\begin{enumerate}[i)]
-\item $X=\text{Spec}(A)$ is disconnected.
-\item $A\simeq A_1\times A_2$ where neither of the rings $A_1,A_2$
-is the zero ring.
-\item $A$ contains an idempotent $\ne 0,1$.
-\end{enumerate}
-\subsection{Solution}
-Let $V(\mathfrak a)$ and $V(\mathfrak b)$ be closed and open.
-Then $\mathfrak a+\mathfrak b=1$.
-So $a+b=1$ with $a\in\mathfrak a$ and $b\in\mathfrak b$.
-$V(\mathfrak a\mathfrak b)$ is empty so is contained in the nilradical.
-So $(ab)^n=0$ and $(a^n)+(b^n)=1$ so we can take $e\in(a^n)$ and
-$1-e\in(b^n)$.
-$e-e^2=0$ so $e$ is idempotent.
-
-$(1,0)^2=(1,0)$ is a nonzero idempotent.
-
-If $x$ is idempotent, then $(1-x)^2=1-x$ is also idempotent.
-$(x)\cap(1-x)=(0)$ because the product is $(0)$.
-Nonzero $\mathfrak a$ has nonzero intersection with exactly one of
-$(x)$ or $(1-x)$.
-$\phi:A\to A/(e)\times A/(1-e)$ is a bijective homomorphism.
-
-$e^2=e$ and $(1-e)^2=1-e$.
-$(e)$ and $(1-e)$ are coprime with $(0)$ intersection.
-$V((e))\cup V((1-e))=V((0))=X$.
-$V((e))\cap V((1-e))=V((1))=\varnothing$.
-\section{}
-\subsection{Problem}
-Let $A$ be a Boolean ring and let $X=\text{Spec}(A)$.
-\begin{enumerate}[i)]
-\item For $f\in A$, the lset $X_f$ is both open and closed in $X$.
-\item Let $f_1,\dots,f_n\in A$.  $X_{f_1}\cup\dots\cup X_{f_n}=X_f$
-for some $f$.
-\item The sets $X_f$ are the only subsets of $X$ which are both
-open and closed.
-\item $X$ is a compact Hausdorff space.
-\end{enumerate}
-\subsection{Solution}
-$X_f$ and $X_{1-f}$ are disjoint since every maximal ideal contains
-one or the other.
-
-Every finitely generated ideal is principal.
-$(f_1, \dots, f_n)=(f)$ for some $f$ so
-$\bigcup_i X_{f_i}=X_f$.
-
-$X$ is quasi-compact, so $Y \subset X$ is quasi-compact.
-$Y$ is open, so it can be written as the union of finitely
-many $X_f$.
-So $Y$ is equal to $X_g$ for some $g$.
-
-If for every $f$, $(f) \subset g$ iff $(f) \subset h$
-then $g$ and $h$ are equal.
-Otherwise, $g\in X_f$ and $h\in X_{1-f}$ for some $f$, disjoint
-open sets.
-\section{}
-\subsection{Problem}
-Let $L$ be a Boolean lattice.
-Define $a+b=(a\land b')\lor(a'\land b)$ and $ab=a\land b$.
-$L$ is a Boolean ring.
-Conversely, show every Boolean ring induces a Boolean lattice.
-\subsection{Solution}
-$\land$ is associative, idempotent, commutative, and unital.
-
-Verification of commutativity and associativity is a matter
-of computation.
-
-$a+0=(a\land 1) \lor 0=a$.
-
-Distributivity follows from distributivity in the lattice
-and de Morgan's laws.
-
-(the converse) $1$ is the unit, $0$ is the additive identity.
-Reflexivity of $\le$ is idempotency of $\cdot$.
-Transitivity of $\le$ is simply multiplication.
-$a=ab$ and $b=ab$ implies $a=b$.
-The complement of $a$ is $(1-a)$.
-$\land$ distributes over $\lor$ and vice versa.
-\section{}
-\subsection{Problem}
-From the last two exercises deduce Stone's theorem, that
-every Boolean lattice is isomorphic to the lattice of
-open-and-closed subsets of some compact Hausdorff
-topological space.
-\subsection{Solution}
-The open-and-closed subsets of the spectrum of the corresponding
-Boolean ring form a Hausdorff space such that the open and closed
-subsets are precisely the sets $X_f$ for $f\in A$.
-
-$X_f \le X_g$ if and only if $f=fg$ which induces the Boolean lattice.
-\section{}
-\subsection{Problem}
-Let $f\in C(X)$.
-Let $U_f=\{x\in X:f(x)\ne 0\}$.
-Let $\tilde{X}$ be the set of all maximal ideals.
-Let $\tilde{U}_f=\{\mathfrak m\in\tilde{X}:f\notin\mathfrak m\}$.
-Let $\mathfrak m_x$ be the set of all functions $f$ such that $f(x)=0$.
-The map $\mu:X\to\tilde{X}$ sends $x\mapsto\mathfrak m_x$.
-Show that $\mu(U_f)=\tilde{U}_f$.
-\subsection{Solution}
-$x\in U_f\iff f(x)\ne0\iff f\notin m_x\iff \mu(x)\in\tilde{U}_f$.
-\section{}
-\subsection{Problem}
-Regular mappings acting on $k$-algebra homomorphisms by right composition
-put regular mappings in one-to-one correspondence with $k$-algebra
-homomorphisms.
-\subsection{Solution}
-\section{}
-\subsection{Problem}
-\subsection{Solution}
+TODO
 
 
 \chapter{}
@@ -629,9 +325,7 @@ Let $f$ be the map from $M$ to $M''$ in the exact sequence. For each $m \in M$, 
 Let $A$ be a ring, $\mathfrak{a}$ an ideal contained in the Jacobson radical of $A$; let $M$ be an $A$-module and $N$ a finitely generated $A$-module, and let $u: M \rightarrow N$ be a homomorphism. If the induced homomorphism $M/\mathfrak{a}M \rightarrow N/\mathfrak{a}N$ is surjective, then $u$ is surjective.
 
 \subsection{Solution}
-The induce homomorphism is surjective, so $u(x)+\mathfrak aN$ passes through
-all values of $N/\mathfrak aN$.
-$\Im(u)+\mathfrak aN=N$ so $\Im(u)=N$ by Nakayama's lemma.
+TODO
 \section{}
 \subsection{Problem}
 Let $A$ be a ring $\neq 0$. Show that $A^m \cong A^n \Rightarrow m = n$.
@@ -651,17 +345,7 @@ Ker $(\phi) \subset M$ and $M$ is finitely generated, so Ker $(\phi)$ must be fi
 Let $f: A \rightarrow B$ be a ring homomorphism, and let $N$ be a $B$-module. Regarding $N$ as an $A$-module by restriction of scalars, form the $B$-module $N_B = B \otimes_A N$. Show that the homomorphism $g: N \rightarrow N_B$ which maps $y$ to $1 \otimes y$ is injective and that $g(N)$ is a direct summand of $N_B$.
 
 \subsection{Solution}
-Let $p:N_B\to N$ be $p(b\otimes y)=by$ which is induced uniquely by the
-universal property of the tensor product, as $\tilde{p}(b,y)=by$ is
-bilinear.
-
-$r(a,n)=p(f(a)\otimes n)$ is bilinear in $A$ and $N$.
-If $r(a,n)=0$ then $a\otimes n=0$.
-$r(1,n)=n$, so $1\otimes n$ is bijective,
-
-Considering $g\circ p$, we have $\ker(g\circ p)\oplus \Im(g\circ p)=N_B$.
-$p$ is surjective so $\Im(g\circ p)=\Im(g)$.
-By the injectivity of $g$, $\ker(g\circ p)=\ker(p)$.
+TODO
 
 \chapter{}
 
@@ -694,11 +378,7 @@ Let $f: (ST)^{-1}A \rightarrow U^{-1}(S^{-1}A)$ be defined by $f(a/st) = (a/s)/(
 Let $f: A \rightarrow B$ be a homomorphism of rings and let $S$ be a multiplicatively closed subset of $A$. Let $T = f(S)$. Show that $S^{-1}B$ and $T^{-1}B$ are isomorphic as $S^{-1}A$-modules.
 
 \subsection{Solution}
-Let $g_1:B\to S^{-1}B$ and $g_2:B\to T^{-1}B$ be the canonical maps.
-$g_2$ induces a unique map $h_2\circ g_1=g_2$.
-$g_1$ induces a unique map $h_1\circ g_2=g_1$.
-$h_1\circ h_2$ is unique by the previous exercise, and is the identity.
-Similarly, $h_2\circ h_1$ is the identity.
+TODO
 \section{}
 \subsection{Problem}
 Let $A$ be a ring. Suppose that, for each prime ideal $\mathfrak{p}$, the local ring $A_{\mathfrak{p}}$ has no nilpotent element $\neq 0$. Show that $A$ has no nilpotent element $\neq 0$. If each $A_{\mathfrak{p}}$ is an integral domain, is $A$ necessarily an integral domain?
@@ -754,8 +434,7 @@ v) Every prime ideal which meets $T$ also meets $S$.
 \subsection{Solution}
 .
 
-i $\Rightarrow$ ii: Since $\phi$ is surjective, for each $a/t \in T^{-1}A$, there exists $a_1/s \in S^{-1}A$ such that $a_1/s$, considered as an element of $T^{-1}A$, is equal to $a/t$. So $\exists u \in A$ such that $u(ta_1 - sa) = 0$.
-
+i $\Rightarrow$ ii: Since $\phi$ is surjective, for each $a/t \in T^{-1}A$, there exists $a_1/s \in S^{-1}A$ such that $a_1/s$, considered as an element of $T^{-1}A$, is equal to $a/t$. So $\exists u \in T$ such that $u(ta_1 - sa) = 0$. Since $\phi$ is injective, if $a_1/s_1 = a_2/s_2$ considered as elements of $T$, then they are equal considered as elements of $S$. In other words, if there exists $t_3 \in T$ such that $t_3 (s_2 a_1 - s_1 a_2) = 0$, then there exists a $s_3 \in S$ such that $s_3 (s_2 a_1 - s_1 a_2) = 0$. 
 ii) TODO
 
 iii) TODO
@@ -764,9 +443,57 @@ iv) TODO
 
 v) TODO
 
+\section{}
+\subsection{Problem}
+The set $S_0$ of all non-zero-divisors in $A$ is a saturated multiplicatively closed subset of $A$. Hence the set $D$ of zero-divisors in $A$ is a union of prime ideals (see Chapter 1, Exercise 14). Show that every minimal prime ideal of $A$ is contained in $D$.
+
+The ring $S_{0}^{-1}A$ is called the total ring of fractions of $A$. Prove that
+
+i) $S_0$ is the largest multiplicatively closed subset of $A$ for which the homomorphism $A \rightarrow S_0^{-1}A$ is injective.
+
+ii) Every element in $S_{0}^{-1}A$ is either a zero-divisor or a unit.
+
+iii) Every ring in which every non-unit is a zero-divisor is equal to its total ring of fractions (i.e., $A \rightarrow S_0^{-1}A$ is bijective).
+
+
+\subsection{Solution}
+Let $\mathfrak{p}$ be a minimal prime ideal. Then $A-\mathfrak{p}$ is a maximal multiplicatively closed subset of $A$. This means that it contains $S_0$, which means that $\mathfrak{p} \subset D$.
+
+i) First, let us establish that $A \rightarrow S_{0}^{-1}A$ is injective. Suppose $a_1/s_1 - a_2/s_2 = 0$. Then there exists $u \in S_0$ such that $u(a_1 s_2 - a_2 s_1) = 0$. But this contradicts the fact that $u$ is a non-zero-divisor. Thus, this is indeed injective. To see that it is the largest such set, suppose we had a set $S_1$ with $S_0 \subset S_1$ which contained a zero-divisor $z$. Then I claim that $0/z = 1/z$. To see this, note that $0/z - 1/z = 0 \Leftrightarrow \exists u \in S_1, u(-z) = 0$. But such a $u$ clearly exists because $z$ is a zero-divisor. So the map is no longer injective.
+
+ii) If $a/s$ is a zero-divisor, then there exists $a_1/s_1$ such that $aa_1/ss_1 - 0/1 = 0$, so in other words, $\exists u \in S_0$ such that $uaa_1 = 0$. But this is impossible because this would imply $u$ is a zero-divisor, unless $aa_1 = 0$. This happens if and only if $a$ is a zero-divisor. So if $a$ is not a zero-divisor, then $a/s$ is not a zero-divisor, for all $s \in S_0$. And these are precisely all the non-zero-divisors in $S_0^{-1}A$. Now clearly $a \in S_0$, so we can just take $s/a$ as the inverse of $a/s$ and see that it is a unit. Thus we are done.
+
+iii) 
+
+
+
+\chapter{}
+
+\section{}
+\subsection{Problem}
+
+\subsection{Solution}
+
+\subsection{Problem}
+If $\mathfrak{a} = r(\mathfrak{a})$, then $\mathfrak{a}$ has no embedded prime ideals.
+
+\subsection{Solution}
+Let $\mathfrak{a} = \cap \mathfrak{q}_i$ be the primary decomposition of $\mathfrak{a}$. Then $r(\mathfrak{a}) = r(\cap \mathfrak{q}_i) = \cap r(\mathfrak{q_i})$. Let $r(\mathfrak{q_i}) = \mathfrak{p}_i$. Then $r(\mathfrak{a}) = \mathfrak{a} = \cap \mathfrak{p}_i$. Since all prime ideals are primary, this is the primary decomposition of $\mathfrak{a}$. Clearly, there are no embedded ideals, because if there were, we could just remove them from this representation and it would remain the same. Thus, $\mathfrak{a}$ has no embedded ideals, as desired.
+
+
+
+
 
 
 
 \end{document}
+
+
+
+
+
+
+
+
 
 
