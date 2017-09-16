@@ -90,8 +90,7 @@ Let $\mathfrak{a}$ be a prime ideal. Then $A/\mathfrak{a}$ is an integral domain
 \subsection{Problem}
 Let $A$ be a ring $\neq 0$. Show that the set of prime ideals of $A$ has minimal elements with respect to inclusion.
 \subsection{Solution}
-TODO
-
+Just apply Zorn's lemma to the set of complements of the prime ideals.
 
 \section{}
 \subsection{Problem}
@@ -167,8 +166,13 @@ TODO
 \subsection{Problem}
 In a ring $A$, let $\Sigma$ be the set of all ideals in which every element is a zero-divisor. Show that the set $\Sigma$ has maximal elements and that every maximal element of $\Sigma$ is a prime ideal. Hence the set of zero-divisors of $A$ is a union of prime ideals.
 \subsection{Solution}
+Any chain in $\Sigma$ has a maximal element - just take the union of all elements in the chain. It is clearly also an ideal in which every element is a zero-divisor. So Zorn's lemma implies that $\Sigma$ has maximal elements. 
 
-TODO
+Let $M$ be a maximal element of $\Sigma$. Then let $xy \in M$. If $x$ is not in $M$, then $M \cup \{x\}$ is a larger ideal than $M$ that is also an element of $\Sigma$, a contradiction.
+
+Obviously the set of all zero-divisors is the union of the maximal ideals of $\Sigma$, so the set of zero divisors is a union of prime ideal.
+
+
 
 \section{}
 \subsection{Problem}
@@ -474,13 +478,19 @@ iii)
 
 \subsection{Solution}
 
+\section{}
 \subsection{Problem}
 If $\mathfrak{a} = r(\mathfrak{a})$, then $\mathfrak{a}$ has no embedded prime ideals.
 
 \subsection{Solution}
 Let $\mathfrak{a} = \cap \mathfrak{q}_i$ be the primary decomposition of $\mathfrak{a}$. Then $r(\mathfrak{a}) = r(\cap \mathfrak{q}_i) = \cap r(\mathfrak{q_i})$. Let $r(\mathfrak{q_i}) = \mathfrak{p}_i$. Then $r(\mathfrak{a}) = \mathfrak{a} = \cap \mathfrak{p}_i$. Since all prime ideals are primary, this is the primary decomposition of $\mathfrak{a}$. Clearly, there are no embedded ideals, because if there were, we could just remove them from this representation and it would remain the same. Thus, $\mathfrak{a}$ has no embedded ideals, as desired.
 
+\section{}
+\subsection{Problem}
+If $A$ is absolutely flat, every primary ideal is maximal.
 
+\subsection{Solution}
+ 
 
 
 
